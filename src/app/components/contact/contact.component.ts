@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit{
   title = 'CONTACT COMPONENT';
-  
+  emailContact: string;
   ngOnInit(){
       console.log('contact.component loaded');
+  }
+
+  saveEmail(){
+    localStorage.setItem('contactMail',this.emailContact);
+    
   }
 }
