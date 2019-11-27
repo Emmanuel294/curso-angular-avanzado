@@ -15,6 +15,7 @@ const appRoutes: Routes = [
     {path: 'animals', component:AnimalsComponent},
     {path: 'contact', component:ContactComponent},
     {path: 'keepers', component:KeepersComponent},
+    {path: 'tienda', component: TiendaComponent},
     {path: '**', component:HomeComponent},
 ];
 
